@@ -251,6 +251,9 @@ body {
   background-position: right center;
   background-size: cover;
 }
+.banner .carousel-control {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .banner-box {
     height: 300px;
@@ -260,6 +263,9 @@ body {
   .banner-box {
     height: 500px;
     margin-top: 0;
+  }
+  .banner .carousel-control {
+    display: block;
   }
 }
 /*服务流程*/
