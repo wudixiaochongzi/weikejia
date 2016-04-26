@@ -383,6 +383,7 @@
   "css": [
     "grid.less",
     "responsive-utilities.less",
+    "glyphicons.less",
     "dropdowns.less",
     "carousel.less"
   ],
@@ -400,5 +401,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://v3.bootcss.com/customize/?id=57073b4c0945dcc4dda433797bba14f6"
+  "customizerUrl": "http://v3.bootcss.com/customize/?id=4c2e8f569280d2df72c95710c16b42a2"
 }
