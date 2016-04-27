@@ -52,7 +52,9 @@ body{
     }
     .max-header{
       display: none;
+      //height: 0;
       //overflow: hidden;
+      //transition: height 2s;
       background: #000;
       padding: 0 10px;
       border-top: 1px solid #101010;
@@ -241,37 +243,39 @@ body{
 
 
 /*banner*/
-.banner-box{
-  height: 250px;
+div.banner{
   margin-top: 50px;
-  .item{
-    height: 100%;
-    a{
-      display: block;
+  .banner-box{
+    height: 250px;
+    .swiper-slide{
       height: 100%;
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: cover;
+      a{
+        display: block;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: cover;
+      }
     }
   }
-}
-.banner{
-  .carousel-control{
+  .swiper-pagination,.swiper-button-next,.swiper-button-prev{
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .banner-box{
-    height: 300px;
+  div.banner{
+    .banner-box{
+      height: 300px;
+    }
   }
 }
 @media screen and (min-width: 992px) {
-  .banner-box{
-    height: 500px;
+  div.banner{
     margin-top: 0;
-  }
-  .banner{
-    .carousel-control{
+    .banner-box{
+      height: 500px;
+    }
+    .swiper-pagination,.swiper-button-next,.swiper-button-prev{
       display: block;
     }
   }
